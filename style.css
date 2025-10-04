@@ -1,0 +1,202 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Navbar */
+.navbar {
+  background: #361913;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #ecc185;
+}
+
+/* Hero */
+.hero {
+  background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover no-repeat;
+  color: #fff;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  margin: 20px 0;
+}
+
+.btn {
+  background: #5a1d00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #8d6e63;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f4ef;
+  color: #3e2723;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* Menu */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 50px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-card h3 {
+  margin: 15px 0 5px;
+  color: #3e2723;
+}
+
+.menu-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.menu-card .price {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c49b63;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+}
+
+.contact form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contact form button {
+  border: none;
+}
+
+.contact .map iframe {
+  flex: 1;
+  min-height: 300px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Footer */
+footer {
+  background: #3e2723;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+.about {
+  display: flex;
+  flex-direction: column; /* يحط العناصر تحت بعض */
+  align-items: center;    /* يوسطنهم في النص */
+  text-align: center;     /* يوسطن النص */
+}
+
+.about-text {
+  margin-bottom: 20px; /* مسافة بين النص والصورة */
+}
+
+.about-img img {
+  max-width: 100%;  /* يخلي الصورة تستجيب مع الشاشة */
+  height: auto;
+  border-radius: 10px; /* لمسة جمالية ناعمة */
+}
